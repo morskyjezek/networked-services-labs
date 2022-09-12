@@ -1,0 +1,36 @@
+<!DOCTYPE html><!-- the MODEL part (ie, the document model is understood by the browser and parsed accordingly )-->
+<html>
+    <head>
+        <!-- the VIEW part -->
+        <link type="text/css" rel="stylesheet" href="style.css"> 
+
+        <!-- the CONTROL part -->
+        <!-- external example
+        <link type="text/javascript" rel="script" href="script.js">
+        -->
+        <!-- internal example -->
+        <script type="text/javascript">
+            function myalert()
+            {
+                var myvariable = document.getElementById("saysomething").value;
+                if (myvariable > "") {
+                    window.alert(myvariable);
+                } else {
+                    window.alert("You did not say anything!");
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1 id="feedback-heading" class="main-heading">Submit your feedback ... </h1>
+        <p id="form-instructions" class="body-text">This is a form to request your input. Please use the space below:</p>
+        <form action="javasript:myalert()">
+            <p>Input your comment here: 
+                <input type="text" id="saysomething" />
+                <input type="submit" value="Submit" onclick="myalert()" />
+            </p>
+
+        </form>
+    </body>
+</html>
