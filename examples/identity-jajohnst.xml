@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+    <identity>
+        <firstName>Jesse</firstName>
+        <lastName>Johnston</lastName>
+        <uniqname>jajohnst</uniqname>
+    </identity>
+    <hobbies>
+        <hobby name="long walks" type="freetime" place="in the woods" />
+    </hobbies>
+</record>
