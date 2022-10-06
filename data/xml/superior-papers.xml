@@ -22,6 +22,6 @@
                 </corpname>
             </repository>
         </did>
-        <!-- here would be additional information like scope, biohist, and contents lists -->
+        <!-- here would be additional information like scope, bioghist, and contents lists -->
     </archdesc>
 </ead>
