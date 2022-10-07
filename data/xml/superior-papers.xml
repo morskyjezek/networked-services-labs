@@ -23,5 +23,11 @@
             </repository>
         </did>
         <!-- here would be additional information like scope, bioghist, and contents lists -->
+        <bioghist>This collection is a superior collection of papers for a superior organization and individual.</bioghist>
+        <dsc>
+            <c01 level="series">Business Records</c01>
+            <c02 level="series">Correspondence</c02>
+            <c03 level="file">Personal File</c03>
+        </dsc>
     </archdesc>
 </ead>
