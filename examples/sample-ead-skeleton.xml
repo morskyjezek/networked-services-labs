@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://loc.gov/ead/ead3_undeprecated.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<ead xmlns="http://ead3.archivists.org/schema/undeprecated/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/terms/">
+    <control langencoding="iso639-2b" dateencoding="iso8601">
+        
+    </control>
+    <archdesc level="collection">
+
+    </archdesc>
+</ead>
