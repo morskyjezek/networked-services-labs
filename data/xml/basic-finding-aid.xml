@@ -1,0 +1,16 @@
+<findingaid>
+    <title>A New Finding Aid</title>
+    <box name="Box 1">
+        <folder>Folder 1</folder>
+        <folder>Folder 2</folder>
+    </box>
+    <box name="Box 2">
+        <folder>Folder 1</folder>
+        <folder>Folder 2</folder>
+    </box>
+    <item>Letter to Jesse Johnston</item>
+    <item>Diary of a Wimpy Kid</item>
+    <item>Notes for SI 676</item>
+    <item>Recording of a lecture</item>
+    <item>Gradebook</item>
+</findingaid>
