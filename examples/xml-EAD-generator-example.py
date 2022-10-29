@@ -37,10 +37,14 @@ def ead(tag):
     return etree.QName(EAD3_ns, tag)
 
 #============= Get the data 
-# Possible challenge: modify this script to ask for input
+# IDEA: modify this script to ask for input
 
 #============= Create the XML tree and elements
 # this demo uses the lxml E factory to create the tree and subelements
+
+# IDEA: create functions to generate separate sections/elements, 
+# e.g., def buildControl(recordID, instanceURL):
+# etc... 
 
 # set a root element, use .QName to set namespace
 rootName = etree.QName(EAD3_ns, 'ead')
