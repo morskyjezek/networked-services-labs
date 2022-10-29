@@ -26,6 +26,7 @@ XHTML_ns = ''
 ns = {
     'ead' : EAD3_ns,
     'dc'  : DC_ns,
+    'dcterms': DCTERMS_ns,
     'xsi' : XSI_ns
 }
 
