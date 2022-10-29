@@ -30,7 +30,8 @@ ns = {
     'xsi' : XSI_ns
 }
 
-# helper to add namespace delcarations with subelement tags
+# helper to add namespace delcarations with subelement tags, 
+# this helps with use of the QName function in lxml
 def ead(tag):
     '''
     This function takes a string representing an EAD tag name and adds the qualifying namespace
