@@ -78,6 +78,9 @@ publisher.text = 'University of Michigan School of Information'
 date = etree.SubElement(publicationstmt, ead('date'), attrib={'normal':'2022-09-01'})
 date.text = 'September 2022'
 
+# maintenancestatus (required)
+maintenancestatus = etree.SubElement(control, ead('maintenancestatus'), attrib={'value':'new'})
+
 # build ARCHDESC element
 # top-level digital ID element for identifying information about collection
 did1 = etree.SubElement(archdesc, ead('did'))
