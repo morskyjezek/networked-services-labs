@@ -1,4 +1,6 @@
 ## validate XML with python lxml
+# see documentation at https://lxml.de/validation.html#xmlschema
+# Date: November 2022
 
 # import lxml & os.path for file handling
 from lxml import etree
