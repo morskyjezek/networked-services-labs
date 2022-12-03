@@ -1,0 +1,145 @@
+[
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson()['item']['title']",
+    "onError": "set-to-blank",
+    "newColumnName": "item_title",
+    "columnInsertIndex": 3,
+    "description": "Create column item_title at index 3 based on column Item_json_data using expression grel:value.parseJson()['item']['title']"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:forEach(value.parseJson().item.notes, v, v).join(\"| \")",
+    "onError": "set-to-blank",
+    "newColumnName": "item_notes_all",
+    "columnInsertIndex": 3,
+    "description": "Create column item_notes_all at index 3 based on column Item_json_data using expression grel:forEach(value.parseJson().item.notes, v, v).join(\"| \")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson().item.id",
+    "onError": "set-to-blank",
+    "newColumnName": "item_loc_id",
+    "columnInsertIndex": 3,
+    "description": "Create column item_loc_id at index 3 based on column Item_json_data using expression grel:value.parseJson().item.id"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson().item.medium[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "item_medium",
+    "columnInsertIndex": 3,
+    "description": "Create column item_medium at index 3 based on column Item_json_data using expression grel:value.parseJson().item.medium[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson().item.summary",
+    "onError": "set-to-blank",
+    "newColumnName": "item_summary",
+    "columnInsertIndex": 3,
+    "description": "Create column item_summary at index 3 based on column Item_json_data using expression grel:value.parseJson().item.summary"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:forEach(value.parseJson().item.item.subject_headings, v, v.chomp(\".\")).join(\"; \")",
+    "onError": "set-to-blank",
+    "newColumnName": "item_subject_heads",
+    "columnInsertIndex": 3,
+    "description": "Create column item_subject_heads at index 3 based on column Item_json_data using expression grel:forEach(value.parseJson().item.item.subject_headings, v, v.chomp(\".\")).join(\"; \")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:forEach(value.parseJson().item.item.creators, v, v.title+\", \"+v.role).join(\"; \")",
+    "onError": "set-to-blank",
+    "newColumnName": "item_creators_w_roles",
+    "columnInsertIndex": 3,
+    "description": "Create column item_creators_w_roles at index 3 based on column Item_json_data using expression grel:forEach(value.parseJson().item.item.creators, v, v.title+\", \"+v.role).join(\"; \")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson().item.item.part_of",
+    "onError": "set-to-blank",
+    "newColumnName": "item_partof",
+    "columnInsertIndex": 3,
+    "description": "Create column item_partof at index 3 based on column Item_json_data using expression grel:value.parseJson().item.item.part_of"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:forEach(value.parseJson().item.item.contributors, v, v.chomp(\".\")).join(\"; \")",
+    "onError": "set-to-blank",
+    "newColumnName": "item_contributors_joined",
+    "columnInsertIndex": 3,
+    "description": "Create column item_contributors_joined at index 3 based on column Item_json_data using expression grel:forEach(value.parseJson().item.item.contributors, v, v.chomp(\".\")).join(\"; \")"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson().item.repository[0]",
+    "onError": "set-to-blank",
+    "newColumnName": "item_source",
+    "columnInsertIndex": 3,
+    "description": "Create column item_source at index 3 based on column Item_json_data using expression grel:value.parseJson().item.repository[0]"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "Item_json_data",
+    "expression": "grel:value.parseJson().item.rights_information",
+    "onError": "set-to-blank",
+    "newColumnName": "item_rights_information",
+    "columnInsertIndex": 3,
+    "description": "Create column item_rights_information at index 3 based on column Item_json_data using expression grel:value.parseJson().item.rights_information"
+  }
+]
