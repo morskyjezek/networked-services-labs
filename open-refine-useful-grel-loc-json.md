@@ -66,3 +66,9 @@ value.parseJson().item.repository[0]
 ```
 value.parseJson().item.rights_information
 ```
+
+## Hi-resolution Image
+
+```
+value.parseJson().item.image_url[3]
+```
